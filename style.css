@@ -1,0 +1,200 @@
+body{
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: rgb(61, 53, 53);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: minmax(0, 1fr);
+  height: 100vh;
+}
+
+.container > *{
+  overflow-y: auto;
+}
+
+.container > *{
+  scrollbar-width: none;
+}
+.container > *::-webkit-scrollbar{
+  display: none;
+}
+
+.logo-links-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(35, 33, 33);
+}
+
+.logo-container{
+  padding: 0 0 30px 0;
+}
+
+img{
+  height: 300px;
+  width: 300px;
+}
+
+#rest-name{
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(233, 218, 218);
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
+
+#slogan{
+  color: burlywood;
+  position: absolute;
+  top: 41%;
+  left: 30%;
+}
+
+#border1{
+  position: absolute;
+  top: 48%;
+  border: 1px solid rgb(76, 74, 74);
+  width: 100%;
+}
+
+h3{
+  font-size: 22px;
+  text-align: center;
+  color: rgb(233, 218, 218);
+}
+
+.sub-links{
+  list-style: none;
+}
+
+.sub-links li a{
+  text-decoration: none;
+  color: rgb(205, 202, 202);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  font-size: 20px;
+}
+
+
+.banner img{
+  width: 97%;
+  height: 370px;
+  padding: 10px;
+  border-radius: 45px;
+}
+
+.search-container{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgb(19, 19, 19);
+  height: 60px;
+  display: flex;
+  justify-content:space-around;
+}
+
+#search{
+  width: 70%;
+  padding: 10px 10px 10px 10px;
+  margin-top: 1px;
+}
+
+#search img{
+  height: 24px;
+  width: 24px;
+}
+
+#search-ipt{
+  all: unset;
+  width: 100%;
+  height: 30px;
+  background-color:rgb(37, 35, 35);
+  color: rgb(119, 116, 116);
+  padding: 4px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 5px;
+}
+
+#buttons{
+  width: 30%;
+  display: flex;
+  justify-content:space-evenly;
+  padding: 5px;
+}
+
+#corner-logo{
+  height: 60px;
+  width: 55px;
+}
+
+.btn{
+  color: white;
+  padding: 0px 38px;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.food-item{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+#f-item{
+  padding: 10px;
+
+}
+
+#f-item h3{
+  font-size: 22px;
+  text-align: left;
+  color: rgb(233, 218, 218);
+}
+
+.food-item .card{
+   height: 320px;
+   width: 90%;
+   background-color: rgb(31, 30, 30);
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+}
+
+.image-container{
+  height: 75%;
+  width: 93%;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.food-details span{
+  display: block;
+}
+
+.description{
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
