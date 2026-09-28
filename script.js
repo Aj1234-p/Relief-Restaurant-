@@ -134,7 +134,7 @@ function payOrder(order) {
 }
 
 function thankyouFnc(order) {
-  // alert("Thank you for eating with us today!");
+  alert("Thank you for eating with us today!");
   return;
 }
 
